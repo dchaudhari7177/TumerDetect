@@ -1,83 +1,115 @@
-# Brain Tumor MRI Analysis System
+# **Brain Tumor MRI Analysis System**  
 
-A web application that analyzes MRI scans to detect and classify brain tumors, providing treatment recommendations using AI.
+A web application that analyzes MRI scans to detect and classify brain tumors, providing AI-driven treatment recommendations.  
 
-## Features
+## **Features**  
 
-- **MRI Scan Analysis**: Upload and analyze brain MRI scans
-- **Tumor Classification**: Detects three types of brain tumors:
-  - Glioma
-  - Meningioma
-  - Pituitary
-- **AI-Powered Recommendations**: Generates treatment insights using Gemini AI
-- **Confidence Scoring**: Shows prediction confidence percentage
-- **User-Friendly Interface**: Simple drag-and-drop upload system
+✅ **MRI Scan Analysis** – Upload and analyze brain MRI scans.  
+✅ **Tumor Classification** – Detects and classifies three types of brain tumors:  
+  - **Glioma**  
+  - **Meningioma**  
+  - **Pituitary**  
+✅ **AI-Powered Recommendations** – Provides treatment insights using **Google Gemini AI**.  
+✅ **Confidence Scoring** – Displays model prediction confidence.  
+✅ **User-Friendly Interface** – Drag-and-drop upload functionality for easy interaction.  
 
-## Setup
+---
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Add your Gemini API key in:
-   - `src/pages/ImageAnalysis.tsx`
-   - `src/pages/GeminiApi.js`
+## **Setup Instructions**  
 
-4. Start the application:
-   ```bash
-   npm start
-   ```
-5. Start the backend server (Python Flask) on port 5001
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/dchaudhari7177/TumerDetect.git
+cd TumerDetect
+```
 
-## Tech Stack
+### **2. Install Dependencies**  
+```bash
+npm install
+```
 
-- React with TypeScript
-- Tailwind CSS
-- Google Gemini AI API
-- Flask Backend (Python)
-- Deep Learning Model (for tumor classification)
+### **3. Download the Model File**  
+Since GitHub restricts large file uploads, download the trained model (`model_v11.h5`) manually and place it in the project directory.  
 
-## Machine Learning Models
+📌 **Download Link**: [Google Drive - model_v11.h5](https://drive.google.com/file/d/1RZF6QePVSp8FvdUxNXCl43HhL192aD4q/view?usp=drive_link)  
 
-### Primary Classification Model
-- **Architecture**: EfficientNetB4 with transfer learning
-- **Training Dataset**: Brain Tumor MRI Dataset (3000+ images)
-- **Model Performance**:
-  - Training Accuracy: 98.5%
-  - Validation Accuracy: 97.8%
-  - Test Accuracy: 97.2%
-  - F1 Score: 0.968
-- **Framework**: TensorFlow/Keras
+➡️ **Place the downloaded file in:** `TumerDetect/`  
 
-### Model Performance Metrics
-- **Class-wise Accuracy**:
-  - Glioma: 98.1%
-  - Meningioma: 97.5%
-  - Pituitary: 96.8%
-- **Training Details**:
-  - Epochs: 30
-  - Batch Size: 32
-  - Optimizer: Adam
-  - Learning Rate: 0.0001
-- **Cross-Validation**: 5-fold with average accuracy of 97.4%
+### **4. Add API Key for Gemini AI**  
+Edit the following files and insert your **Google Gemini API key**:  
+- `src/pages/ImageAnalysis.tsx`  
+- `src/pages/GeminiApi.js`  
 
-### Supporting Models
-- **Image Preprocessing**: U-Net for skull stripping and segmentation
-- **Feature Extraction**: ResNet50 backbone for ROI detection
-- **Gene Expression Analysis**: XGBoost model for genetic marker correlation
+### **5. Start the Application**  
+```bash
+npm start
+```
 
-### Model Features
-- Multi-class classification (Glioma, Meningioma, Pituitary, No tumer)
-- Real-time image augmentation
-- Gradient Class Activation Mapping (Grad-CAM) for visualization
-- Ensemble learning for improved accuracy
+### **6. Start the Backend (Flask Server)**  
 
-## Usage
+Run both backend servers as follows:  
 
-1. Upload an MRI scan image
-2. Click "Start Analysis"
-3. View tumor classification results
-4. Read AI-generated treatment recommendations
-5. Genes based prediction of the Tumor with the Confidence
+#### **Image-Based Recognition (Predict.py - Port 5001)**  
+```bash
+python predict.py
+```
 
+#### **Gene-Based Analysis (App.py - Port 5000)**  
+```bash
+python app.py
+```
+
+---
+
+## **Tech Stack**  
+
+🖥 **Frontend:** React (TypeScript), Tailwind CSS  
+🧠 **AI Model:** TensorFlow/Keras (EfficientNetB4)  
+⚙ **Backend:** Flask (Python)  
+🔍 **Deep Learning Features:** Grad-CAM, Image Segmentation (U-Net), Feature Extraction (ResNet50), Gene Analysis (XGBoost)  
+
+---
+
+## **Machine Learning Models**  
+
+### **Primary Classification Model**  
+- **Architecture**: EfficientNetB4 (Transfer Learning)  
+- **Dataset**: Brain Tumor MRI Dataset (3,000+ images)  
+- **Performance**:  
+  - **Training Accuracy:** 98.5%  
+  - **Validation Accuracy:** 97.8%  
+  - **Test Accuracy:** 97.2%  
+  - **F1 Score:** 0.968  
+
+📊 **Class-wise Accuracy**  
+✔ Glioma: **98.1%**  
+✔ Meningioma: **97.5%**  
+✔ Pituitary: **96.8%**  
+
+**Training Details**  
+- **Epochs:** 30  
+- **Batch Size:** 32  
+- **Optimizer:** Adam  
+- **Learning Rate:** 0.0001  
+- **Cross-Validation:** 5-fold (Avg: **97.4%**)  
+
+### **Supporting Models**  
+- **U-Net** – Skull stripping & segmentation  
+- **ResNet50** – Feature extraction for **ROI detection**  
+- **XGBoost** – Genetic marker-based tumor prediction  
+
+### **Model Capabilities**  
+✅ **Multi-class classification** (Glioma, Meningioma, Pituitary, No Tumor)  
+✅ **Real-time Image Augmentation**  
+✅ **Grad-CAM Visualizations** for interpretability  
+✅ **Ensemble Learning** for higher accuracy  
+
+---
+
+## **How to Use**  
+
+1️⃣ **Upload an MRI scan image**  
+2️⃣ **Click "Start Analysis"**  
+3️⃣ **View Tumor Classification Results**  
+4️⃣ **Check AI-Generated Treatment Recommendations**  
+5️⃣ **Genetic Marker-based Prediction with Confidence Score**  
