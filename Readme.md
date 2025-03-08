@@ -42,7 +42,7 @@ Edit the following files and insert your **Google Gemini API key**:
 
 ### **5. Start the Application**  
 ```bash
-npm start
+npm run dev
 ```
 
 ### **6. Start the Backend (Flask Server)**  
