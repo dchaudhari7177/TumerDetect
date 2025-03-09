@@ -116,7 +116,7 @@ python app.py
 
 ## **Images Gallery**
 - ![Image 1](images/image.png)
-- ![Image 2](images/image2.jpg)
-- ![Image 3](images/image3.jpg)
-- ![Image 4](images/image4.jpg)
-- ![Image 5](images/image5.jpg)
+<video width="600" controls>
+  <source src="video.mp4" type="TumerDetect\images\screenrecording.mp4">
+  Your browser does not support the video tag.
+</video>
