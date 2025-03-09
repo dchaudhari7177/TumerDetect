@@ -115,8 +115,9 @@ python app.py
 5️⃣ **Genetic Marker-based Prediction with Confidence Score**  
 
 ## **Images Gallery**
-- ![Image 1](images/image.png)
 <video width="600" controls>
-  <source src="video.mp4" type="TumerDetect\images\screenrecording.mp4">
+  <source src="images/screenrecording.mp4.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+- ![Image 1](images/image.png)
+- ![Image 2](images/imah.png)
