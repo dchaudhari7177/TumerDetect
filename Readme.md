@@ -113,3 +113,10 @@ python app.py
 3️⃣ **View Tumor Classification Results**  
 4️⃣ **Check AI-Generated Treatment Recommendations**  
 5️⃣ **Genetic Marker-based Prediction with Confidence Score**  
+
+## **Images Gallery**
+- ![Image 1](images/image.png)
+- ![Image 2](images/image2.jpg)
+- ![Image 3](images/image3.jpg)
+- ![Image 4](images/image4.jpg)
+- ![Image 5](images/image5.jpg)
