@@ -141,7 +141,7 @@ The model was trained on the Brain Tumor Multimodal Image Dataset containing bot
 2️⃣ **Click "Start Analysis"**  
 3️⃣ **View Tumor Classification Results**  
 4️⃣ **Check AI-Generated Treatment Recommendations**  
-
+<<<<<<< HEAD
 5️⃣ **Genetic Marker-based Prediction with Confidence Score**
 =======
 5️⃣ **Genetic Marker-based Prediction with Confidence Score**  
@@ -150,4 +150,4 @@ The model was trained on the Brain Tumor Multimodal Image Dataset containing bot
 
 - ![Image 1](images/image.png)
 - ![Image 2](images/imah.png)
-
+>>>>>>> 53bf50e3fc0f94e20299be4ea35523517fd6f73b
